@@ -109,7 +109,7 @@ def main():
     cap.release()
     cv2.destroyAllWindows()
 
-    with open('26_07_24/without_chess/image_corners_real_coords.json', 'w') as f:
+    with open('26_07_24/without_chess/image_corners_real_coords_20_09.json', 'w') as f:
         json.dump(corner_points, f)
 
     print("Coordinate reali dei 4 angoli dell'immagine salvate.")
