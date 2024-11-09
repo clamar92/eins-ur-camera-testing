@@ -1,7 +1,7 @@
 
-# FastSAM Setup Guide
+# Setup Guide
 
-This guide provides the setup instructions to install and configure the FastSAM environment.
+Setup instructions to install and configure the environment.
 
 ## Prerequisites
 
@@ -17,11 +17,10 @@ This guide provides the setup instructions to install and configure the FastSAM 
 
 2. **Install Dependencies**
 
-   - Create a `requirements.txt` file in the main directory, and add all necessary library names and versions required by FastSAM.
    - Install all dependencies from `requirements.txt`:
    
      ```bash
-     pip install -r FastSAM/requirements.txt
+     pip install -r requirements.txt
      ```
 
    - Install additional required packages:
@@ -36,28 +35,7 @@ This guide provides the setup instructions to install and configure the FastSAM 
    Create a directory to store the weights and download the required weights files:
 
    ```bash
-   mkdir -p $HOME/weights
-   wget -P $HOME/weights https://huggingface.co/spaces/An-619/FastSAM/resolve/main/weights/FastSAM.pt
-   wget -P $HOME/weights https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
+   mkdir -p /weights
+   wget -P /weights https://huggingface.co/spaces/An-619/FastSAM/resolve/main/weights/FastSAM.pt
+   wget -P /weights https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
    ```
-
-4. **Verify Weights Download**
-
-   List the downloaded weights to confirm:
-
-   ```bash
-   ls -lh $HOME/weights
-   ```
-
-5. **Set Checkpoint Paths**
-
-   Define the checkpoint paths in your script or environment:
-   
-   ```python
-   FAST_SAM_CHECKPOINT_PATH = f"{HOME}/weights/FastSAM.pt"
-   SAM_SAM_CHECKPOINT_PATH = f"{HOME}/weights/sam_vit_h_4b8939.pth"
-   ```
-
---- 
-
-This guide provides a straightforward setup for running FastSAM in a Python 3.9.11 environment. Make sure to follow each step carefully to ensure all dependencies and weights are properly installed and accessible.
