@@ -10,12 +10,7 @@ Setup instructions to install and configure the environment.
 
 ## Setup Instructions
 
-1. **Clone the FastSAM Repository**
-   ```bash
-   git clone https://github.com/CASIA-IVA-Lab/FastSAM.git
-   ```
-
-2. **Install Dependencies**
+1. **Install Dependencies**
 
    - Install all dependencies from `requirements.txt`:
    
@@ -30,7 +25,7 @@ Setup instructions to install and configure the environment.
      pip install roboflow supervision jupyter_bbox_widget
      ```
 
-3. **Download Weights**
+2. **Download Weights**
 
    Create a directory to store the weights and download the required weights files:
 
