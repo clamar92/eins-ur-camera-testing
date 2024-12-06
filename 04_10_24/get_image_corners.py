@@ -29,12 +29,12 @@ acc = 0.4
 vel = 0.4
 
 # Posizione iniziale del robot
-robot_startposition = [math.radians(17.87),
-                       math.radians(-78.87),
-                       math.radians(-100.97),
-                       math.radians(-90.22),
-                       math.radians(90.03),
-                       math.radians(15.62)]
+robot_startposition = [math.radians(21.90),
+                       math.radians(-82.13),
+                       math.radians(-87.16),
+                       math.radians(-101.36),
+                       math.radians(90.43),
+                       math.radians(18.88)]
 
 def move_to_start_position():
     print('Move robot to start position')
