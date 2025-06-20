@@ -1,0 +1,3 @@
+# Exclude virtual environment directory
+.venv/
+weights/
